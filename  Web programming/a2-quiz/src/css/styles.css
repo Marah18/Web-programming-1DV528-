@@ -1,0 +1,249 @@
+body {
+    position: relative;
+    background-image: url('/img/quiz.jpeg');
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(216, 212, 215, 0.712);
+    z-index: -1;
+}
+
+#username-form {
+    text-align: center;
+}
+
+#username-input {
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.Name {
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    display: flex;
+}
+
+#submit-button {
+    background-color: #247ba4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+    border: none;
+}
+
+#submit-button:hover {
+    background-color: #8aa9b8;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    width: 75%;
+    width: 700px;
+    background-color: lightpink;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 0 0 20px 2px;
+}
+
+.answers-container {
+    display: grid;
+    margin: 2px;
+    gap: 7px;
+}
+
+.choice-button {
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+}
+
+.choice-button:hover {
+    color: rgb(16, 42, 68);
+    background-color: rgb(214, 223, 231);
+    font-size: larger;
+}
+
+
+.hide {
+    display: none;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.start-button,
+.restart-button {
+    height: 43px;
+    width: 90px;
+    border-radius: 6px;
+    background-color: #a4c7d7;
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+.start-button:hover {
+    cursor: pointer;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    border-radius: 6px;
+    background-color: #a4c7d7;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#timer {
+    font-size: 22px;
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.387);
+    padding: 7px;
+    margin-bottom: 10px;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.win-div,
+.lose-div {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.label-style {
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 15 px;
+
+}
+
+.q-style {
+    height: 30px;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: 25px;
+    color: rgb(8, 4, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-style {
+    height: 25px;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: large;
+    color: rgb(121, 121, 215);
+    margin-left: 15 px;
+
+}
+
+
+
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: px;
+    box-shadow: 0 0 5px 2px;
+}
+
+.score-table th,
+.score-table td {
+    border: 1px solid #430a3e;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+
+}
+
+
+.score-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.score-img {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.score-table th {
+    background-color: #a4c7d7;
+}
+
+
+.score-button-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+.score-button {
+    width: 150px;
+    height: 50px;
+    color: black;
+    font-size: large;
+    background-color: rgb(239, 239, 140);
+    border-radius: 50px;
+    cursor: alias;
+}
+
+
+.score-button:hover {
+    font-size: 0px;
+    background-image: url('/img/scorebtn.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+
+}

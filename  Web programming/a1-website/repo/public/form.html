@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Form </title>
+    <link rel="icon" type="image/png" href="images/favicon1.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background-image: url(images/form-background.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="title-div">
+            <h2 class="title-page">
+                The Starry Night Hotel
+            </h2>
+            <img class="icon-hotel" src="images/icon-hotel.png" alt="icon hotel">
+            <h3>Stay once, carry memories forever </h3>
+
+        </div>
+
+
+        <div class="navbar">
+            <a class="middle-section-home" href="page.html"> Page </a>
+            <a class="middle-section-home" href="typogr.html"> Typogrphy </a>
+            <a class="middle-section-home" href="form.html"> Form </a>
+            <a class="middle-section-home" href="about.html"> About </a>
+            <a class="middle-section-home" href="column3.html"> column3 </a>
+        </div>
+
+    </header>
+
+
+    <form>
+        <label for="fname"> First name: </label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname"> Last name: </label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="card-type">Card Type:</label>
+        <select id="card-type" name="card-type" required>
+            <option value="" disabled selected>Select a card type</option>
+            <option value="visa">Visa</option>
+            <option value="swish">Swish</option>
+            <option value="klarna">Klarna</option>
+            <option value="mastercard">MasterCard</option>
+        </select>
+        <br>
+        <label for="cnumber"> Card number: </label>
+        <input type="text" id="cnumber" name="cnumber" required><br>
+        <label for="validity">Validity:</label>
+        <input type="text" id="validity" name="validity" placeholder="MM/YYYY" required> <br>
+
+
+        <label for="amount"> Amount: </label>
+        <input type="number" id="amount" name="amount " min="1" required><br>
+
+        <div class="buttons">
+            <button class="submit-button" type="submit">Submit</button>
+            <button class="reset-button" type="reset" value="Reset">Reset</button>
+        </div>
+    </form>
+
+
+
+
+    <footer>
+        <br>
+        <div class="footer-section">
+            <h3> MDN reference</h3>
+            <ul>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank"> CSS reference
+                    </a></li>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"> HTML elements
+                        reference </a></li>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> HTML: HyperText Markup
+                        Language</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+
+            <h3>HTML and CSS validators</h3>
+            <ul>
+                <li> <a href="https://validator.w3.org/" target="_blank"> Markup Validation Service </a></li>
+                <li> <a href="https://jigsaw.w3.org/css-validator/" target="_blank"> CSS Validation Service </a></li>
+            </ul>
+
+        </div>
+        <div class="footer-section">
+            <h3> W3C standard for HTML and CSS </h3>
+            <ul>
+                <li>
+                    <a href="https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript" target="_blank">
+                        HTML CSS Standards </a>
+                </li>
+                <li> <a href="https://www.w3.org/standards/" target="_blank"> W3 standards </a></li>
+                <li> <a href="https://www.w3.org/html/" target="_blank"> W3 HTML standards </a></li>
+
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

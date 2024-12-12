@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Quiz </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="/js/main.js"></script>
+    <link rel="icon" type="image/png" href="fav.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title"> QUIZ !!</h2>
+
+        <div class="Name" id="username-div" style="display: none;">
+            <form id="username-form">
+                <input type="text" id="username-input" required placeholder="User Name">
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="timer" style="display: none;"> </div>
+        <div class="none" id="quastion-contain">
+            <div id="question"> </div>
+            <div id="choices" class="answers-container">
+            </div>
+        </div>
+
+        <div class="control">
+            <button id="startButton" class="start-button">Start</button>
+        </div>
+
+        <div id="win" class="win-div" style="display: none;">
+            <p> YOU Answered all quastions ! </p>
+            <h4> AWESOME !</h4>
+            <img src="/img/win.png" alt="winner">
+        </div>
+
+
+        <div id="lose" class="lose-div" style="display: none;">
+            <p> YOU Answered a quastion wrong ! </p>
+        </div>
+
+        <div class="control">
+            <button id="restartButton" class="restart-button" style="display: none;">Restart</button>
+        </div>
+
+        <div class="score-button-contain">
+            <button id="scoreButton" class="score-button">
+                TOP SCORES
+            </button>
+        </div>
+
+        <div id="scores-contain" style="display: none;">
+            <img src="/img/score.png" alt="score" class="score-img">
+
+            <table id="score-table" class="score-table">
+                <thead>
+                    <tr>
+                        <th>Place number: </th>
+                        <th>Player Name: </th>
+                        <th>Score: </th>
+                    </tr>
+                </thead>
+                <tbody id="score-table-body">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script type="module" src="/js/main.js"></script>
+
+</html>
